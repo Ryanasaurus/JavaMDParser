@@ -31,7 +31,7 @@ public class Parser {
 	public static HeaderNode parseHeader(Scanner s) {
 		int size = s.next().length();
 		HeaderNode header = new HeaderNode(size);
-		header.addChildren(parseText(s));
+		header.addChild(parseText(s));
 		return header;
 	}
 	
@@ -40,10 +40,10 @@ public class Parser {
 	 * @param s
 	 * @return
 	 */
-	public static List<Node> parseText(Scanner s){
-		List<Node> nodes = new ArrayList<>();
-		nodes.add(new StringNode(s.nextLine()));
-		return nodes;
+	public static StringNode parseText(Scanner s){
+		StringNode node = new StringNode(s.nextLine());
+		node.getHTML();
+		return node;
 	}
 
 }
