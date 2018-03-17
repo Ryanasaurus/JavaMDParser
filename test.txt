@@ -1,2 +1,2 @@
-# text**boldtext
+# text**bold**italics*text
 ## hello2

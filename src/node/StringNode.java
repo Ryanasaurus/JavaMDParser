@@ -12,6 +12,9 @@ public class StringNode extends Node {
 		String html = text.replaceAll("\\*\\*", "####**");
 		String[] boldArray = html.split("####");
 		html = formatString(boldArray, "<strong>", "</strong>");
+		html = html.replaceAll("\\*", "#####*");
+		String[] italicsArray = html.split("####");
+		html = formatString(italicsArray, "<em>", "</em>");
 		return html;
 	}
 	
