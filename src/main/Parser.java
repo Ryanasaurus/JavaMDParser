@@ -18,7 +18,7 @@ public class Parser {
 				if(s.hasNext("#") || s.hasNext("##")) {
 					parent.addChild(parseHeader(s));
 				} else {
-					
+					parent.addChild(parseParagraph(s));
 				}
 			}
 			return parent;
@@ -42,7 +42,14 @@ public class Parser {
 	 */
 	public static StringNode parseText(Scanner s){
 		StringNode node = new StringNode(s.nextLine());
-		node.getHTML();
+		return node;
+	}
+	
+	public static ParagraphNode parseParagraph(Scanner s) {
+		ParagraphNode node = new ParagraphNode();
+		while(s.hasNextLine() && !s.hasNext("")) {
+			node.addChild(new StringNode(s.nextLine()));
+		}
 		return node;
 	}
 
