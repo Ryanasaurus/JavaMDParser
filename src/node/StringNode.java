@@ -25,8 +25,7 @@ public class StringNode extends Node {
 			sb.append(stringSet[1]);
 			return sb.toString();
 		}
-		for(int i = 1; i<stringSet.length; i++) {
-			System.out.println(stringSet[i]);
+		for(int i = 1; i<stringSet.length; i++){
 			if(i%2 == 1) {
 				sb.append(front);
 				sb.append(stringSet[i].substring(2));

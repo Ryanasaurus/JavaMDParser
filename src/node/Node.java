@@ -21,9 +21,14 @@ public class Node {
 	
 	public String getHTML() {
 		StringBuilder s = new StringBuilder();
-		for(Node n : this.children) {
-			s.append(n.getHTML());
-			s.append("\n");
+//		for(Node n : this.children) {
+//			s.append(n.getHTML());
+//			s.append("%n");
+//		}
+		s.append(children.get(0).getHTML());
+		for(int i = 1; i<children.size(); i++){
+			s.append("%n");
+			s.append(children.get(i).getHTML());
 		}
 		return s.toString();
 	}

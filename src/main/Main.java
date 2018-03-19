@@ -1,6 +1,8 @@
 package main;
 
 import java.io.File;
+import java.io.IOException;
+import java.io.PrintWriter;
 
 import node.*;
 
@@ -17,7 +19,17 @@ public class Main {
 			return;
 		}
 		Node parsedFile = Parser.parse(f);
-		System.out.println(parsedFile.getHTML());
+		System.out.printf(parsedFile.getHTML());
+		File output = new File("output.txt");
+		try {
+			output.setWritable(true);
+			PrintWriter w = new PrintWriter(output.getPath());
+			w.printf(parsedFile.getHTML());
+			w.close();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 
 }
