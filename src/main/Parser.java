@@ -47,10 +47,10 @@ public class Parser {
 	
 	public static ParagraphNode parseParagraph(Scanner s) {
 		ParagraphNode node = new ParagraphNode();
-//		while(s.hasNextLine() && !s.hasNext("")) {
-//			node.addChild(new StringNode(s.nextLine()));
-//		}
 		String line = s.nextLine();
+		while(line.equals("")) {
+			line = s.nextLine();
+		}
 		while(!line.equals("")){
 			node.addChild(new StringNode(line));
 			if(s.hasNext())

@@ -2,3 +2,4 @@
 1. 20180317 2000 wrote code to handle bold text
 1. 20180318 1700 wrote code to handle paragraphs
 1. 20180319 1500 finished paragraph code, added minimal testing
+1. 20180320 1800 added more tests, fixed some bugs

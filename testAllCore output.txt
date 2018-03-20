@@ -1,0 +1,9 @@
+<h1>Big Header</h1>
+<h2>Lil Header</h2>
+<p>To be fair, you have to have a <em>very</em> high IQ to understand Rick and Morty.
+The humour is extremely subtle, and without a solid grasp of theoretical physics most of the jokes will go over a typical viewer’s head.
+There’s also <strong>Rick’s</strong> nihilistic outlook, which is deftly woven into his <em>characterisation</em>- his personal philosophy draws heavily from Narodnaya Volya literature, for instance.
+The <strong>fans</strong> understand this <em>stuff</em>; they have the intellectual capacity to truly appreciate the depths of these jokes, to realise that they’re not just funny- they say something deep about <strong>LIFE</strong>.
+As a consequence people who dislike Rick and Morty truly ARE idiots- of course they wouldn’t appreciate, for instance, the humour in Rick’s existential catchphrase <strong>“Wubba Lubba Dub Dub,”</strong> which itself is a cryptic reference to Turgenev’s Russian epic Fathers and Sons.
+I’m smirking right now just imagining one of those addlepated simpletons scratching their heads in confusion as Dan Harmon’s genius wit unfolds itself on their television screens.
+<strong>What fools</strong>.. how I pity them.</p>
