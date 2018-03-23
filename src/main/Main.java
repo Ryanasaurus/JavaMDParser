@@ -1,8 +1,10 @@
 package main;
 
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.Scanner;
 
 import node.*;
 
@@ -18,7 +20,14 @@ public class Main {
 			System.out.println("Please put pass in a file name argument");
 			return;
 		}
-		Node parsedFile = Parser.parse(f);
+		Node parsedFile = null;
+		try {
+			parsedFile = Parser.parse(new Scanner(f));
+		} catch (FileNotFoundException e1) {
+			e1.printStackTrace();
+			return;
+		}
+//		Node parsedFile = Parser.parse(f);
 		System.out.printf(parsedFile.getHTML());
 		File output = new File("output.txt");
 		try {

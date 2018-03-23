@@ -3,3 +3,4 @@
 1. 20180318 1700 wrote code to handle paragraphs
 1. 20180319 1500 finished paragraph code, added minimal testing
 1. 20180320 1800 added more tests, fixed some bugs
+1. 20180321 1800 wrote code to do lists
