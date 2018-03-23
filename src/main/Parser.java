@@ -11,11 +11,12 @@ import node.*;
 
 public class Parser {
 
-	private static Pattern orderedListPattern = Pattern.compile("\\d+\\.");
-	private static Pattern unorderedListPattern = Pattern.compile("-");
-	private static Pattern bulletedListPattern = Pattern.compile("\\*");
-	private static Pattern blockquotePattern = Pattern.compile(">");
-	private static Pattern separatorPattern = Pattern.compile("---");
+	private static final Pattern orderedListPattern = Pattern.compile("\\d+\\.");
+	private static final Pattern unorderedListPattern = Pattern.compile("-");
+	private static final Pattern bulletedListPattern = Pattern.compile("\\*");
+	private static final Pattern blockquotePattern = Pattern.compile(">");
+	private static final Pattern separatorPattern = Pattern.compile("---");
+	private static final Pattern blockcodePattern = Pattern.compile("```");
 
 	public static Node parse(Scanner s) {
 		Node parent = new Node();
@@ -28,9 +29,11 @@ public class Parser {
 				System.out.println("hello");
 				parent.addChild(parseList(s, false));
 			} else if (s.hasNext(blockquotePattern)) {
-//				parent.addChild(parseBlockQuote(s));
+				parent.addChild(parseBlockquote(s));
 			} else if (s.hasNext(separatorPattern)) {
 				s.nextLine();
+			} else if (s.hasNext(blockcodePattern)) {
+				parent.addChild(parseBlockcode(s));
 			} else {
 				parent.addChild(parseParagraph(s));
 			}
@@ -68,7 +71,7 @@ public class Parser {
 				break;
 			}
 			node.addChild(new StringNode(line));
-			if (s.hasNext(orderedListPattern) || s.hasNext(unorderedListPattern) || s.hasNext(bulletedListPattern))
+			if (s.hasNext(orderedListPattern) || s.hasNext(unorderedListPattern) || s.hasNext(bulletedListPattern) || s.hasNext(blockcodePattern))
 				break;
 			else if (s.hasNext())
 				line = s.nextLine();
@@ -85,6 +88,22 @@ public class Parser {
 			list.addChild(parseText(s));
 		}
 		return list;
+	}
+	
+	public static BlockquoteNode parseBlockquote(Scanner s) {
+		BlockquoteNode node = new BlockquoteNode();
+		if(s.hasNext())
+			node.addChild(parseParagraph(s));
+		return node;
+	}
+	
+	public static BlockcodeNode parseBlockcode(Scanner s) {
+		BlockcodeNode node = new BlockcodeNode(s.next());
+		while(s.hasNext() && !s.hasNext(blockcodePattern))
+			node.addChild(parseText(s));
+		if(s.hasNext())
+			s.next();
+		return node;
 	}
 
 }
