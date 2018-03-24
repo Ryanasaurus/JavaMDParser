@@ -28,6 +28,10 @@ where file is replaced by the input file name
 To run with tests, the testing folder needs to be in the same folder as the projectWithTests.jar file. Without it, it will crash.
 I have submitted an archive file with all the required resources to run the program, and if extracted, it will work fine. 
 
+## Testing:
+My JUnit tests all test the different components of the program from start to finish, to see if it gets the right output. 
+The test testAllIntermediate will tests all the features from the start of the program to the end of it. These are my acceptance tests. 
+
 ## External Resources:
 To do numbered lists, I found a regex code from https://stackoverflow.com/questions/16331423/whats-the-java-regular-expression-for-an-only-integer-numbers-string
 and modified it to suit my needs.  
