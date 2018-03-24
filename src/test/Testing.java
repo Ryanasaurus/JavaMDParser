@@ -18,97 +18,97 @@ public class Testing {
 	@Test
 	public void testWorkingHeaders(){
 		String[] args = new String[1];
-		args[0] = "testHeaders input.txt";
+		args[0] = "testing/testHeaders input.txt";
 		Main.main(args);
-		assertTrue(testOutput("testHeaders output.txt"));
+		assertTrue(testOutput("testing/testHeaders output.txt"));
 	}
 	
 	@Test
 	public void testWorkingHeadersItalics(){
 		String[] args = new String[1];
-		args[0] = "testHeadersWithItalics input.txt";
+		args[0] = "testing/testHeadersWithItalics input.txt";
 		Main.main(args);
-		assertTrue(testOutput("testHeadersWithItalics output.txt"));
+		assertTrue(testOutput("testing/testHeadersWithItalics output.txt"));
 	}
 	
 	@Test
 	public void testWorkingHeadersBold(){
 		String[] args = new String[1];
-		args[0] = "testHeadersWithBold input.txt";
+		args[0] = "testing/testHeadersWithBold input.txt";
 		Main.main(args);
-		assertTrue(testOutput("testHeadersWithBold output.txt"));
+		assertTrue(testOutput("testing/testHeadersWithBold output.txt"));
 	}
 	
 	@Test
 	public void testWorkingParagraph(){
 		String[] args = new String[1];
-		args[0] = "testParagraphs input.txt";
+		args[0] = "testing/testParagraphs input.txt";
 		Main.main(args);
-		assertTrue(testOutput("testParagraphs output.txt"));
+		assertTrue(testOutput("testing/testParagraphs output.txt"));
 	}
 	
 	@Test
 	public void testWorkingMultiParagraph(){
 		String[] args = new String[1];
-		args[0] = "testMultipleParagraphs input.txt";
+		args[0] = "testing/testMultipleParagraphs input.txt";
 		Main.main(args);
-		assertTrue(testOutput("testMultipleParagraphs output.txt"));
+		assertTrue(testOutput("testing/testMultipleParagraphs output.txt"));
 	}
 	
 	@Test
 	public void testAllCore(){
 		String[] args = new String[1];
-		args[0] = "testAllCore input.txt";
+		args[0] = "testing/testAllCore input.txt";
 		Main.main(args);
-		assertTrue(testOutput("testAllCore output.txt"));
+		assertTrue(testOutput("testing/testAllCore output.txt"));
 	}
 	
 	@Test
 	public void testNumberedList(){
 		String[] args = new String[1];
-		args[0] = "testNumberedList input.txt";
+		args[0] = "testing/testNumberedList input.txt";
 		Main.main(args);
-		assertTrue(testOutput("testNumberedList output.txt"));
+		assertTrue(testOutput("testing/testNumberedList output.txt"));
 	}
 	
 	@Test
 	public void testBulletedList(){
 		String[] args = new String[1];
-		args[0] = "testBulletedList input.txt";
+		args[0] = "testing/testBulletedList input.txt";
 		Main.main(args);
-		assertTrue(testOutput("testBulletedList output.txt"));
+		assertTrue(testOutput("testing/testBulletedList output.txt"));
 	}
 	
 	@Test
 	public void testBlockquote(){
 		String[] args = new String[1];
-		args[0] = "testBlockquote input.txt";
+		args[0] = "testing/testBlockquote input.txt";
 		Main.main(args);
-		assertTrue(testOutput("testBlockquote output.txt"));
+		assertTrue(testOutput("testing/testBlockquote output.txt"));
 	}
 	
 	@Test
 	public void testInlineCode(){
 		String[] args = new String[1];
-		args[0] = "testInlineCode input.txt";
+		args[0] = "testing/testInlineCode input.txt";
 		Main.main(args);
-		assertTrue(testOutput("testInlineCode output.txt"));
+		assertTrue(testOutput("testing/testInlineCode output.txt"));
 	}
 	
 	@Test
 	public void testBlockcode(){
 		String[] args = new String[1];
-		args[0] = "testBlockcode input.txt";
+		args[0] = "testing/testBlockcode input.txt";
 		Main.main(args);
-		assertTrue(testOutput("testBlockcode output.txt"));
+		assertTrue(testOutput("testing/testBlockcode output.txt"));
 	}
 	
 	@Test
 	public void testAllIntermediate(){
 		String[] args = new String[1];
-		args[0] = "testAllIntermediate input.txt";
+		args[0] = "testing/testAllIntermediate input.txt";
 		Main.main(args);
-		assertTrue(testOutput("testAllIntermediate output.txt"));
+		assertTrue(testOutput("testing/testAllIntermediate output.txt"));
 	}
 	
 	private boolean testOutput(String eo) {

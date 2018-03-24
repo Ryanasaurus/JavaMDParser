@@ -6,3 +6,4 @@
 1. 20180321 1800 wrote code to do lists
 1. 20180323 1800 implemented remainder of intermediate features
 1. 20180325 1600 finished off tests, fixed bugs
+1. 20180325 1700 exported runnable jars, wrote the readme

@@ -6,11 +6,15 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.Scanner;
 
+import org.junit.internal.TextListener;
+import org.junit.runner.JUnitCore;
+
 import node.*;
 
 public class Main {
 	
 	public static void main(String[] args) {
+		
 		if(args[0]==null) {
 			System.out.println("Please put pass in a file name argument");
 			return;
@@ -40,6 +44,7 @@ public class Main {
 			w.printf(parsedFile.getHTML());
 			w.close();
 			System.out.println("written to output.txt");
+			System.out.println();
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
