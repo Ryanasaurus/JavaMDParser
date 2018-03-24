@@ -25,6 +25,9 @@ where file is replaced by the input file name
 To run the program without acceptance tests: `java -jar projectWithoutTests.jar file` 
 where file is replaced by the input file name
 
+To run with tests, the testing folder needs to be in the same folder as the projectWithTests.jar file. Without it, it will crash.
+I have submitted an archive file with all the required resources to run the program, and if extracted, it will work fine. 
+
 ## External Resources:
 To do numbered lists, I found a regex code from https://stackoverflow.com/questions/16331423/whats-the-java-regular-expression-for-an-only-integer-numbers-string
 and modified it to suit my needs.  
