@@ -1,9 +1,15 @@
 1. 20180316 1800 wrote the code to process headers
 1. 20180317 2000 wrote code to handle bold text
+1. 20180317 2100 wrote code to handle italics text
+1. 20180317 2200 fixing bugs with the above features
 1. 20180318 1700 wrote code to handle paragraphs
-1. 20180319 1500 finished paragraph code, added minimal testing
+1. 20180318 1800 more paragraph code
+1. 20180319 1500 fixing bugs in paragraphs code, added testing
+1. 20180320 1700 added more tests, fixed some bugs
 1. 20180320 1800 added more tests, fixed some bugs
 1. 20180321 1800 wrote code to do lists
+1. 20180321 1800 implemented blockcode and blockquotes
 1. 20180323 1800 implemented remainder of intermediate features
-1. 20180325 1600 finished off tests, fixed bugs
+1. 20180325 1500 fixed bugs
+1. 20180325 1600 wrote tests, fixed bugs
 1. 20180325 1700 exported runnable jars, wrote the readme
