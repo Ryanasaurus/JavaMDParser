@@ -13,7 +13,7 @@ public class ListNode extends Node {
 	
 	public String getHTML() {
 		StringBuilder html = new StringBuilder();
-		html.append("<" + listType + "l> %n");
+		html.append("<" + listType + "l>%n");
 		for(Node n : children) {
 			html.append("<li>");
 			html.append(n.getHTML());

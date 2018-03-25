@@ -5,7 +5,7 @@ public class BlockcodeNode extends Node {
 	String codeClass = "";
 	
 	public BlockcodeNode(String s) {
-		codeClass = s.substring(2, s.length());
+		codeClass = s.substring(3, s.length());
 	}
 
 	public String getHTML() {
@@ -19,7 +19,7 @@ public class BlockcodeNode extends Node {
 			html.append(n.getHTML());
 			html.append("%n");
 		}
-		html.append("</pre></code>");
+		html.append("</code></pre>");
 		return html.toString();
 	}
 	

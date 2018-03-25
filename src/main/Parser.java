@@ -26,7 +26,6 @@ public class Parser {
 			} else if (s.hasNext(orderedListPattern)) {
 				parent.addChild(parseList(s, true));
 			} else if (s.hasNext(unorderedListPattern) || s.hasNext(bulletedListPattern)) {
-				System.out.println("hello");
 				parent.addChild(parseList(s, false));
 			} else if (s.hasNext(blockquotePattern)) {
 				parent.addChild(parseBlockquote(s));
@@ -71,7 +70,7 @@ public class Parser {
 				break;
 			}
 			node.addChild(new StringNode(line));
-			if (s.hasNext(orderedListPattern) || s.hasNext(unorderedListPattern) || s.hasNext(bulletedListPattern) || s.hasNext(blockcodePattern))
+			if (s.hasNext(orderedListPattern) || s.hasNext(unorderedListPattern) || s.hasNext(bulletedListPattern) || s.hasNext(blockcodePattern) || s.hasNext(blockquotePattern))
 				break;
 			else if (s.hasNext())
 				line = s.nextLine();
@@ -92,15 +91,16 @@ public class Parser {
 	
 	public static BlockquoteNode parseBlockquote(Scanner s) {
 		BlockquoteNode node = new BlockquoteNode();
+		s.next();
 		if(s.hasNext())
 			node.addChild(parseParagraph(s));
 		return node;
 	}
 	
 	public static BlockcodeNode parseBlockcode(Scanner s) {
-		BlockcodeNode node = new BlockcodeNode(s.next());
+		BlockcodeNode node = new BlockcodeNode(s.nextLine());
 		while(s.hasNext() && !s.hasNext(blockcodePattern))
-			node.addChild(parseText(s));
+			node.addChild(new RawTextNode(s.nextLine()));
 		if(s.hasNext())
 			s.next();
 		return node;

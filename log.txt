@@ -5,3 +5,4 @@
 1. 20180320 1800 added more tests, fixed some bugs
 1. 20180321 1800 wrote code to do lists
 1. 20180323 1800 implemented remainder of intermediate features
+1. 20180325 1600 finished off tests, fixed bugs

@@ -1,0 +1,28 @@
+<h1>here we will test all the features from core and intermediate</h1>
+<h2>first up, regular paragraphs</h2>
+<p><strong>bold wow</strong> <em>italics</em> <code>code</code> text</p>
+<h2>here we have numbered lists</h2>
+<ol>
+<li><code>here is some code</code></li>
+<li><strong>here we have bold text</strong></li>
+<li><em>here we have italics</em></li>
+</ol>
+<h2>here we have bulleted lists</h2>
+<ul>
+<li>here have some <code>special code</code></li>
+<li><em>wow</em> italics</li>
+<li><strong>boom</strong></li>
+</ul>
+<h2>now for some blockquotes</h2>
+<blockquote>
+<p><strong>bold</strong>
+<em>italics</em>
+normal text
+<code>code</code></p>
+</blockquote>
+<h2>and finally some blockcodes</h2>
+<pre><code>**bold**
+*italics*
+`code`
+normal text
+</code></pre>

@@ -1,0 +1,27 @@
+# here we will test all the features from core and intermediate
+
+## first up, regular paragraphs
+**bold wow** *italics* `code` text
+
+## here we have numbered lists
+1. `here is some code`
+2. **here we have bold text**
+3. *here we have italics*
+
+## here we have bulleted lists
+* here have some `special code`
+* *wow* italics
+* **boom**
+
+## now for some blockquotes
+> **bold** 
+*italics* 
+normal text 
+`code`
+
+## and finally some blockcodes
+```
+**bold**
+*italics*
+`code`
+normal text

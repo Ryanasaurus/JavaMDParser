@@ -1,0 +1,5 @@
+<p>this will create a blockcode element</p>
+<pre><code>magic code goes here
+this should be in the blockcode
+</code></pre>
+<p>this should be outside the blockcode</p>

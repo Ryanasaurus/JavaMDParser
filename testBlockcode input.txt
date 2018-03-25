@@ -1,0 +1,6 @@
+this will create a blockcode element
+```
+magic code goes here
+this should be in the blockcode
+```
+this should be outside the blockcode
